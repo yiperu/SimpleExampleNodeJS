@@ -13,6 +13,12 @@ function pagina2(){
 	return "pagina2";
 }
 
+function favicon(){
+	console.log("Has solicitado Favicon");
+	return " ";
+}
+
 exports.inicio = inicio;
 exports.pagina1 = pagina1;
 exports.pagina2 = pagina2;
+exports.favicon = favicon;
