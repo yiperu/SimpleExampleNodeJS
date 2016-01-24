@@ -17,3 +17,6 @@
 /pagina1
 /
 /pagina1.html
+/pagina1
+/pagina2
+/index
