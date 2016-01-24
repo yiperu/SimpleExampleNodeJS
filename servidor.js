@@ -6,10 +6,15 @@ function iniciar(enrutar,manejador){
 	function arrancaServidor(require, respuesta) {
 
 		var ruta = url.parse(require.url).pathname;
+
+		if (ruta == "/") {
+			ruta = "index.html";
+		};
+
 		console.log("Alguien se ha conectado.")
 		// var contenido = enrutar(manejador,ruta, respuesta);
 
-		var index = fs.readFileSync("www/"+ruta+".html");
+		var index = fs.readFileSync("www/"+ruta);
 		// Aqui registrare las rutas visitadas
 		var registro = fs.createWriteStream('registro.txt',{'flags':'a'});
 		registro.write(ruta + '\n');

@@ -20,3 +20,7 @@
 /pagina1
 /pagina2
 /index
+/index
+/pagina1.html
+/pagina2.html
+index.html
